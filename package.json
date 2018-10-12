@@ -1,0 +1,26 @@
+{
+  "name": "myapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "mkapi": "apidoc -i ./routes/ -o ./public/apidoc/"
+  },
+  "dependencies": {
+    "apidoc": "^0.17.6",
+    "cookie-parser": "~1.4.3",
+    "debug": "~4.1.0",
+    "ejs": "^2.6.1",
+    "express": "~4.16.4",
+    "http-errors": "~1.7.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  },
+  "apidoc": {
+    "name": "myapp",
+    "version": "0.1.0",
+    "description": "apiDoc basic example",
+    "title": "Custom apiDoc browser title",
+    "url": "http://localhost:3000/api"
+  }
+}
